@@ -20,7 +20,6 @@
 
     body {
         text-align: center;
-
         position: relative;
         left: 50%;
         transform: translate(-50%);
@@ -31,11 +30,12 @@
         max-width: 600px;
         font-family: 'Inter', sans-serif;
         font-size: 15.5px;
-
-
     }
     
-    .link {height: 30px;}
+    .link {
+      height: 30px;
+      cursor: pointer;
+    }
 
     a:link {
       color: #6495ED;
@@ -47,6 +47,12 @@
       text-decoration: none;
     }
 
+    #email {
+      display: none;
+      color: black;
+      font-size: 15px;
+      margin-top: 20px;
+    }
     
     #footer{}
 
@@ -67,16 +73,17 @@
 
     <h3 style="font-size: 20px"><a href="https://drive.google.com/drive/folders/1cRLMnzwdhYAjMOnRPHGZ7Lu6VeSiVIaO?usp=sharing" target="_blank">Public notebook</a></h3>
 
+    <!--<h3 style="font-size: 20px"><a href="archive.html">Projects</a></h3>-->
+
     <h3 style="font-size: 20px"><a href="https://manifold.markets/charbar" target="_blank">Predictions</a></h3>
 
-    <!--<h3 style="font-size: 20px"><a href="archive.html">Other writing</a></h3>-->
+    <h3 style="font-size: 20px"><a href="https://calendly.com/inesfernandez" target="_blank">Videocall</a></h3>
 
     <h3 style="font-size: 20px"><a href="links.html">Cool links</a></h3>
 
     <!--<h3 style="font-size: 20px"><a href="bio.html">About</a></h3>-->
 
     <h3 style="font-size: 14px"><a href="https://translate.google.com/?sl=auto&tl=es&text=In%C3%A9s&op=translate" target="_blank">How to pronounce In&eacute;s</a></h3>
-
 
     <br>
 
@@ -88,16 +95,31 @@
             
         <a href="https://www.linkedin.com/in/inesfb/" target="_blank" title=""><img class="link" src="linkedinreal.png"></a>
 
-        <a href="mailto:inesfernandez205@gmail.com" target="_blank"><img class="link" src="mail.png"></a>
-
-        <a href="https://calendly.com/inesfernandez" target="_blank"><img class="link" src="Google_Hangouts_Meet_icon_(2017-2020).png"></a>
+        <img class="link" src="mail.png" onclick="displayEmail()"></a>
 
         <a href="https://www.instagram.com/inesfernandez205/" target="_blank"><img class="link" src="instagram_logo_1.png"></a>
+        
+        <p id="email"></p>
+
+        <p style="font-size: 12.5px;"><i>See when this website was <a href="https://github.com/inesfb/inesfb.github.io" target="_blank">last updated</a></i></p>
+
 
         
 
+        <script>
+        function displayEmail() {
+        document.getElementById("email").innerHTML = "inesfernandez205@gmail.com";
 
-        <p style="font-size: 12.5px;"><i>See when this website was <a href="https://github.com/inesfb/inesfb.github.io" target="_blank">last updated</a></i></p>
+        var text = document.getElementById("email");
+        if (text.style.display === "block") {
+            text.style.display = "none";
+        } else {
+            text.style.display = "block";
+        }
+        }
+        </script>
+
+
     </div>
 
 </body>

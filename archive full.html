@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<head>
+
+    <title> In&eacute;s Archive </title>
+
+ <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+     
+    <link rel='icon' href='earth-globe-europe-africa_1f30d.ico' type='image/x-icon'/ >
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+
+</head>
+
+<style>
+
+    @font-face{
+       font-family:Montserrat; 
+       src: url(https://fonts.googleapis.com/css2?family=Inter&display=swap)
+     }
+
+    body {
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 0px;
+        margin-right: 50px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        max-width: 600px;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+    }
+
+    h3 {
+        text-align: center;
+        cursor: pointer;
+        font-weight: bolder;
+        font-size: 20px;
+        padding-bottom: 0.005px;
+    }
+
+    .link_list{
+        text-align: center;
+        margin: 0;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        padding-bottom: 30px;
+        padding-top: 5px;
+        width: 250px;
+        font-family: 'Inter', sans-serif;
+        display: none;
+    }
+     
+    .link {height: 30px;}
+    
+    #footer{}
+    
+</style>
+
+<body>
+
+    <p style="text-align: left;"><b><a href="index.html"> Back</a></b></p>
+
+    <h2><p style="text-align: center; font-size: 25px; padding-bottom: 65px;">Work</p></h2>
+
+    <h3><p id="articles_header" onclick="displayArticles()"> &#9656; Articles</p></h3>
+
+        <div class="link_list" id="articles_list">
+
+            <p><a href="https://www.thefitzwilliam.com/p/why-peru-is-so-corrupt?sd=pf" target="_blank" title="">Why Peru Is So Corrupt (The Fitzwilliam)</a></p>
+
+            <p><a href="https://medium.com/@inesfernandez/what-is-effective-altruism-with-pictures-d0ab746fe9c0" target="_blank" title="">What is effective altruism? (With pictures!)</a></p>
+
+            <p><a href="https://medium.com/@inesfernandez/what-is-computational-social-science-44cea57e3cc4" target="_blank" title="">What is computational social science?</a></p>
+
+            <p><a href="https://bettermatters.uk/2022/10/25/your-small-guide-to-ai-safety/" target="_blank" title="">Intro to the AI alignment problem</a><p> 
+
+            <p><a href="https://bettermatters.uk/2022/09/08/how-and-why-to-predict-the-future/" target="_blank" title="">Forecasting: How and why to predict the future</a></p>
+
+            <p><a href="https://www.ubicenter.org/personal-allowance" target="_blank" title="Did this one during my summer at The UBI Center & am pretty proud of it. The personal allowance is an individual's tax-free income in the UK, and eliminating it is probably the most commonly proposed way of funding UBI there.">Analysis of UK universal basic income policy (Microsimulation research project with The UBI Center)</a></p>
+
+            <p><a href="https://forum.effectivealtruism.org/posts/i6Hday6mudh5j4mZ4/ea-can-sound-less-weird-if-we-want-it-to" target="_blank" title="">EA can sound less weird, if we want it to(EA forum post)</a> </p>
+
+            <p><a href="https://medium.com/arc-digital/a-radical-proposal-to-give-up-on-privacy-35a1d0d1ceef" target="_blank" title="">Is Privacy Worth It? (Arc Digital)</a></p>
+
+            <p><a href="https://medium.com/bigger-picture/is-a-wealth-tax-actually-unrealistic-da76ee4dab8"target="_blank" title="This one is a great example of motivated reasoning">Is A Wealth Tax Actually Unrealistic? (The Bigger Picture) </a></p>
+
+            <p><a href="https://forum.effectivealtruism.org/users/ines" target="_blank" title="">EA Forum contributions</a></p>
+
+            <br>
+
+            <p style="font-size: 12.5px;"><i>*If you hover over an item (desktop only), a little comment will appear.</i></p>
+
+
+            <script>
+            function displayArticles() {
+            var text = document.getElementById("articles_list");
+            var h = document.getElementById("articles_header");
+
+            if (text.style.display === "block") {
+                text.style.display = "none";
+                h.textContent = "\u25B8 Articles";
+                
+            } else {
+                text.style.display = "block";
+                h.textContent = "\u25BE Articles";
+            }
+            }
+
+            </script>
+
+        </div>
+
+
+    <h3><p id="research_header" onclick="displayResearch()"> &#9656; Research</p></h3>
+
+        <div class="link_list" id="research_list">
+
+            <p><a href="" target="_blank" title="">example</a></p>
+
+
+            <br>
+
+            <p style="font-size: 12.5px;"><i>*If you hover over an item (desktop only), a little comment will appear.</i></p>
+
+            <script>
+            function displayResearch() {
+            var text = document.getElementById("research_list");
+            var h = document.getElementById("research_header");
+
+            if (text.style.display === "block") {
+                text.style.display = "none";
+                h.textContent = "\u25B8 Research";
+                
+            } else {
+                text.style.display = "block";
+                h.textContent = "\u25BE Research";
+            }
+            }
+
+            </script>
+
+        </div>
+
+
+    <h3><p id="coding_header" onclick="displayCoding()"> &#9656; Coding</p></h3>
+
+        <div class="link_list" id="coding_list">
+
+            <p><a href="" target="_blank" title="">example</a></p>
+
+
+            <br>
+
+            <p style="font-size: 12.5px;"><i>*If you hover over an item (desktop only), a little comment will appear.</i></p>
+
+            <script>
+            function displayCoding() {
+            var text = document.getElementById("coding_list");
+            var h = document.getElementById("coding_header");
+
+            if (text.style.display === "block") {
+                text.style.display = "none";
+                h.textContent = "\u25B8 Coding";
+                
+            } else {
+                text.style.display = "block";
+                h.textContent = "\u25BE Coding";
+            }
+            }
+
+            </script>
+        
+        </div>
+
+    
+</body>
+</html>

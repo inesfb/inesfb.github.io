@@ -37,18 +37,17 @@
         cursor: pointer;
         font-weight: bolder;
         font-size: 20px;
-        padding-bottom: 0.005px;
+        padding-top: 15px;
+
     }
 
-    .link_list{
+    .desc{
         text-align: left;
         margin: 0;
         position: relative;
         left: 50%;
         transform: translate(-50%);
-        padding-bottom: 30px;
-        padding-top: 5px;
-        width: 400px;
+        width: 525px;
         font-family: 'Inter', sans-serif;
         display: none;
     }
@@ -65,36 +64,26 @@
 
     <h2 style="text-align: center; font-size: 25px; padding-bottom: 65px;">Projects</h2>
 
-    <h3 id="research_header" onclick="displayResearch()"> &#9656; Research</h3>
+    <h3 id="ubi_header" onclick="displayResearch()"> &#9656; Funding UBI by eliminating the UK personal allowance</h3>
 
-        <div class="link_list" id="research_list">
+        <div class="desc" id="ubi_list">
 
-
-            <p><a href="https://www.ubicenter.org/personal-allowance" target="_blank" title="Did this one during my summer at The UBI Center & am pretty proud of it. The personal allowance is an individual's tax-free income in the UK, and eliminating it is probably the most commonly proposed way of funding UBI there.">Microsimulation of UK universal basic income policy </a>
-            <br><i>The UBI Center</i> 
-            <br>· Presented to UK Cross Party Parliamentary and Local Government group on UBI</p>
-
-            <br>
-            <p><a href="" target="_blank" title="">Dissertation</a></p>
-
-            p><a href="" target="_blank" title="">Wikipedia</a></p>
-
-            <br>
-
-            <p style="font-size: 12.5px;"><i>*If you hover over an item (desktop only), a little comment will appear.</i></p>
+            <p>Written with The UBI Center</p>
+            <p>Presented to UK Cross Party Parliamentary and Local Government group on UBI</p>
+            <p><a href="https://www.ubicenter.org/personal-allowance" target="_blank">Read online</a> or <a href="https://github.com/UBICenter/personal-allowance/tree/main" target="_blank">view code</a></p>
 
             <script>
             function displayResearch() {
-            var text = document.getElementById("research_list");
-            var h = document.getElementById("research_header");
+            var text = document.getElementById("ubi_list");
+            var h = document.getElementById("ubi_header");
 
             if (text.style.display === "block") {
                 text.style.display = "none";
-                h.textContent = "\u25B8 Research";
+                h.textContent = "\u25B8 Funding UBI by eliminating the UK personal allowance";
                 
             } else {
                 text.style.display = "block";
-                h.textContent = "\u25BE Research";
+                h.textContent = "\u25BE Funding UBI by eliminating the UK personal allowance";
             }
             }
 
@@ -102,14 +91,37 @@
 
         </div>
 
+    <h3 id="peru_header" onclick="displayCoding()"> &#9656; Why is Peru so Corrupt?</h3>
 
-    <h3 id="articles_header" onclick="displayArticles()"> &#9656; Articles</h3>
+        <div class="desc" id="peru_list">
 
-        <div class="link_list" id="articles_list">
+            <p>Written for <i>The Fitzwilliam</i></p>
+            <p>Featured in <a href="https://marginalrevolution.com/marginalrevolution/2022/09/sunday-assorted-links-383.html" target="_blank">Marginal Revolution</a></p>
+            <a href="ttps://www.thefitzwilliam.com/p/why-peru-is-so-corrupt?sd=pf" target="_blank">Read online</a>
 
-            <p><a href="https://www.thefitzwilliam.com/p/why-peru-is-so-corrupt?sd=pf" target="_blank" title="">Why Peru Is So Corrupt</a>
-            <br><i>The Fitzwilliam</i>
-            <br>· Featured in <a href="https://marginalrevolution.com/marginalrevolution/2022/09/sunday-assorted-links-383.html" target="_blank">Marginal Revolution</a></p>
+            <script>
+            function displayCoding() {
+            var text = document.getElementById("peru_list");
+            var h = document.getElementById("peru_header");
+
+            if (text.style.display === "block") {
+                text.style.display = "none";
+                h.textContent = "\u25B8 Why is Peru so Corrupt?";
+                
+            } else {
+                text.style.display = "block";
+                h.textContent = "\u25BE Why is Peru so Corrupt?";
+            }
+            }
+
+            </script>
+        
+        </div>
+
+
+    <h3 id="articles_header" onclick="displayArticles()"> &#9656; Other Articles</h3>
+
+        <div class="desc" id="articles_list">
 
             <p><a href="https://medium.com/@inesfernandez/what-is-effective-altruism-with-pictures-d0ab746fe9c0" target="_blank" title="">What is effective altruism? (With pictures!)</a></p>
 
@@ -118,7 +130,6 @@
             <p><a href="https://bettermatters.uk/2022/10/25/your-small-guide-to-ai-safety/" target="_blank" title="">Intro to the AI alignment problem</a><p> 
 
             <p><a href="https://bettermatters.uk/2022/09/08/how-and-why-to-predict-the-future/" target="_blank" title="">Forecasting: How and why to predict the future</a></p>
-
 
             <p><a href="https://forum.effectivealtruism.org/posts/i6Hday6mudh5j4mZ4/ea-can-sound-less-weird-if-we-want-it-to" target="_blank" title="">EA can sound less weird, if we want it to(EA forum post)</a> </p>
 
@@ -140,50 +151,16 @@
 
             if (text.style.display === "block") {
                 text.style.display = "none";
-                h.textContent = "\u25B8 Articles";
+                h.textContent = "\u25B8 Other Articles";
                 
             } else {
                 text.style.display = "block";
-                h.textContent = "\u25BE Articles";
+                h.textContent = "\u25BE Other Articles";
             }
             }
 
             </script>
 
-        </div>
-
-
-    
-
-
-    <h3 id="coding_header" onclick="displayCoding()"> &#9656; Coding</h3>
-
-        <div class="link_list" id="coding_list">
-
-            <p><a href="" target="_blank" title="">example</a></p>
-
-
-            <br>
-
-            <p style="font-size: 12.5px;"><i>*If you hover over an item (desktop only), a little comment will appear.</i></p>
-
-            <script>
-            function displayCoding() {
-            var text = document.getElementById("coding_list");
-            var h = document.getElementById("coding_header");
-
-            if (text.style.display === "block") {
-                text.style.display = "none";
-                h.textContent = "\u25B8 Coding";
-                
-            } else {
-                text.style.display = "block";
-                h.textContent = "\u25BE Coding";
-            }
-            }
-
-            </script>
-        
         </div>
 
     
